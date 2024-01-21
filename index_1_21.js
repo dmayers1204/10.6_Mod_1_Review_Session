@@ -23,6 +23,11 @@ function getTarget(arr,target){
 
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
+function greaterThan14(arr){
+    return arr.find((ele)=> ele > 14);  
+}
+console.log(greaterThan14([3,4,5,6,7,17]));
+console.log(greaterThan14([3,4,5,19,7,8]));
 
 
 
