@@ -32,8 +32,16 @@ console.log(greaterThan14([3,4,5,19,7,8]));
 
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
-
-
+function returnFirstStr(arr){
+    for(let ele of arr){
+       if (ele.length > 4){
+        return ele;
+       } 
+    }
+    return undefined; 
+}
+console.log(returnFirstStr(['Bye','Yes','Hello','No','Faster'])); 
+console.log(returnFirstStr(['Yes','No','Bye','Hip','Bump','Hello']));
 
 // Given an array of Objects and a target id return the first object that matches the id or undefined if no such object is found
 // Expected Structure of a SINGLE object - 
