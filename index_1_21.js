@@ -18,8 +18,8 @@ function getTarget(arr,target){
     return undefined; 
   }
 
-  console.log(getTarget([1,2,3,4,5,6],6));
-  console.log(getTarget([5,6,7,8,9],7)); 
+//   console.log(getTarget([1,2,3,4,5,6],6));
+//   console.log(getTarget([5,6,7,8,9],7)); 
 
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
@@ -27,8 +27,8 @@ function greaterThan14(arr){
 return arr.find((ele)=> ele > 14 ? ele : undefined) 
 }
 
-console.log(greaterThan14([3,4,5,6,7,17]));
-console.log(greaterThan14([3,4,5,19,7,8]));
+// console.log(greaterThan14([3,4,5,6,7,17]));
+// console.log(greaterThan14([3,4,5,19,7,8]));
 
 
 
@@ -41,8 +41,8 @@ function returnFirstStr(arr){
     }
     return undefined; 
 }
-console.log(returnFirstStr(['Bye','Yes','Hello','No','Faster'])); 
-console.log(returnFirstStr(['Yes','No','Bye','Hip','Bump','Hello']));
+// console.log(returnFirstStr(['Bye','Yes','Hello','No','Faster'])); 
+// console.log(returnFirstStr(['Yes','No','Bye','Hip','Bump','Hello']));
 
 // Given an array of Objects and a target id return the first object that matches the id or undefined if no such object is found
 // Expected Structure of a SINGLE object - 
@@ -64,8 +64,8 @@ function returnFirstObj(arr,targetid){
    }
    return undefined; 
 } 
-console.log(returnFirstObj(peopleArray, "X29B_g"));
-console.log(returnFirstObj(peopleArray, "Y42C_e"));
+// console.log(returnFirstObj(peopleArray, "X29B_g"));
+// console.log(returnFirstObj(peopleArray, "Y42C_e"));
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 const arrWitObjs1 = [{
@@ -109,8 +109,8 @@ function nameWithObj(arr,targetid){
        }
        return undefined; 
     } 
-    console.log(nameWithObj(arrWitObjs1, "Y42C_a"));
-    console.log(nameWithObj(arrWitObjs1, "Y42C_c"));
+    // console.log(nameWithObj(arrWitObjs1, "Y42C_a"));
+    // console.log(nameWithObj(arrWitObjs1, "Y42C_c"));
 /*
 
 {
