@@ -47,46 +47,25 @@ console.log(returnFirstStr(['Yes','No','Bye','Hip','Bump','Hello']));
 // Given an array of Objects and a target id return the first object that matches the id or undefined if no such object is found
 // Expected Structure of a SINGLE object - 
 
-// const arrWitObjs = [{
-//  id: "Y42C_a",
-//  name: "Robert",
-//  occupation: "Chef",
-//  eyeColor: "green"
-// },
-// {
-//     id: "Y42C_b",
-//     name: "Ralph",
-//     occupation: "Chef",
-//     eyeColor: "orange"
-//    },
-//    {
-//     id: "Y42C_c",
-//     name: "Ronny",
-//     occupation: "Chef",
-//     eyeColor: "yellow"
-//    },
-//    {
-//     id: "Y42C_d",
-//     name: "Robby",
-//     occupation: "Chef",
-//     eyeColor: "red"
-//    },
-//    {
-//     id: "Y42C_e",
-//     name: "Rick",
-//     occupation: "Chef",
-//     eyeColor: "blue"}];
+const peopleArray = [
+  { id: "Y42C_e", name: "Rick", occupation: "Chef", eyeColor: "blue" },
+  { id: "A71D_f", name: "Emily", occupation: "Engineer", eyeColor: "brown" },
+  { id: "X29B_g", name: "Alex", occupation: "Artist", eyeColor: "green" },
+  { id: "L55R_h", name: "Sophie", occupation: "Doctor", eyeColor: "hazel" },
+  { id: "K83M_i", name: "David", occupation: "Teacher", eyeColor: "gray" }
+];
 
-// function returnFirstObj(arr,targetid){
-//     for(let ele of arr) {
-//     if(ele.id === targetid){
-//     return ele;
-//      }
-//    }
-//    return undefined; 
-// } 
-// console.log(returnFirstObj(arrWitObjs, "Y42C_d"));
-// console.log(returnFirstObj(arrWitObjs, "Y42C_e"));
+
+function returnFirstObj(arr,targetid){
+    for(let ele of arr) {
+    if(ele.id === targetid){
+    return ele;
+     }
+   }
+   return undefined; 
+} 
+console.log(returnFirstObj(peopleArray, "X29B_g"));
+console.log(returnFirstObj(peopleArray, "Y42C_e"));
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 const arrWitObjs1 = [{
