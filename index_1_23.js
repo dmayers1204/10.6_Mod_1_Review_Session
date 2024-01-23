@@ -6,8 +6,8 @@
 // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
 
     function newCapString(str){
-        let strArr = str.split(' ');
-         for (let i = 0; i < words.length; i++) {
+        let strArr = strArr.split(' ');
+         for (let i = 0; i < strArr.length; i++) {
            strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1); 
             
              }   
