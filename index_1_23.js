@@ -5,9 +5,23 @@
 // // 1.----------------------------------
 // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
 
+    function newCapString(str){
+        let strArr = str.split(' ');
+         for (let i = 0; i < words.length; i++) {
+           words[i] = words[i][0].toUpperCase() + words[i].slice(1); 
+            
+             }   
+           
+            return words.join(' ');
+       }
+         
+     
 // 2.----------------------------------
 // Write a function that takes in an object and returns a formatted greeting.
 // This is the format of the object - 
+
+
+
 
 
 const john = {
