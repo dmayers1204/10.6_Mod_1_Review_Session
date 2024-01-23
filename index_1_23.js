@@ -8,11 +8,11 @@
     function newCapString(str){
         let strArr = str.split(' ');
          for (let i = 0; i < words.length; i++) {
-           words[i] = words[i][0].toUpperCase() + words[i].slice(1); 
+           strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1); 
             
              }   
            
-            return words.join(' ');
+            return strArr.join(' ');
        }
          
      
