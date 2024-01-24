@@ -20,6 +20,9 @@
 // Write a function that takes in an object and returns a formatted greeting.
 // This is the format of the object - 
 
+function formatGreeting(obj) {
+return `Hello ${obj.firstName} ${obj.lastName}, have a great day at your job as a ${obj.occupation}` 
+} 
 
 
 
@@ -36,7 +39,7 @@ const rebecca = {
   occupation: "Teacher"
 }
 
-console.log(formatGreeting(john) === "Hello John Klaus, have a great day at your job as a Carpenter")
+console.log(formatGreeting(john))
 
 console.log(formatGreeting(rebecca) === "Hello Rebecca Cohen, have a great day at your job as a Teacher")
 
@@ -50,18 +53,13 @@ console.log(formatGreeting(rebecca) === "Hello Rebecca Cohen, have a great day a
   lastName: "Klaus",
   occupation: "Carpenter"
 }
+*/
 
 
 
 
 
 
-
-
-
-
-
-Message 10-6_mod_1_review
 
 
 
