@@ -5,16 +5,16 @@
 // // 1.----------------------------------
 // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
 
-    function newCapString(str){
-        let strArr = strArr.split(' ');
-         for (let i = 0; i < strArr.length; i++) {
-           strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1); 
-            
-             }   
-           
-            return strArr.join(' ');
-       }
-         
+    function capEachWordInString(str){
+        // let strArr = strArr.split(' ');
+        //  for (let i = 0; i < strArr.length; i++) {
+        //    strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1); 
+            // strArr.join(' ');
+        return str.split(' ').map((ele) => ele[0].toUpperCase() + ele.slice(1).toLowerCase()).join(' ');
+               
+         }   
+        
+         console.log(capEachWordInString("hello world")); 
      
 // 2.----------------------------------
 // Write a function that takes in an object and returns a formatted greeting.
