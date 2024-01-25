@@ -1,3 +1,34 @@
+1. function getTarget(arr,target){
+    let eleTarget = null;
+    for(let ele of arr){
+    if(ele === target){
+        eleTarget = ele;
+        return eleTarget;
+      }
+    }
+    return undefined; 
+  }
+
+2. function greaterThan14(arr){
+    return arr.find((ele)=> ele > 14);  
+}
+
+3. function returnFirstStr(arr){
+    for(let ele of arr){
+       if (ele.length > 4){
+        return ele;
+       } 
+    }
+    return undefined; 
+}
+
+4. function greaterThan14(arr){
+    return arr.find((ele)=> ele > 14);  
+return arr.find((ele)=> ele > 14 ? ele : undefined) 
+}
+
+5. 
+
 
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 

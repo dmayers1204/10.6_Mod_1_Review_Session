@@ -39,9 +39,9 @@ const rebecca = {
   occupation: "Teacher"
 }
 
-console.log(formatGreeting(john))
+console.log(formatGreeting(john));
 
-console.log(formatGreeting(rebecca))
+console.log(formatGreeting(rebecca));
 
 // 3.----------------------------------
 // Write a function that takes an array of objects and a targetId and returns a formatted string. Each object in the array will have the same structure as the objects from the previous question plus an id. Use chatGPT to create an array of 10 such objects.
@@ -54,6 +54,81 @@ console.log(formatGreeting(rebecca))
   occupation: "Carpenter"
 }
 */
+
+
+const arrayOfObjects = [
+    {
+      id: "Tfjso_1M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    {
+      id: "Tfjso_2M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    {
+      id: "Tfjso_3M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    {
+      id: "Tfjso_4M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    {
+      id: "Tfjso_5M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    {
+      id: "Tfjso_6M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    {
+      id: "Tfjso_7M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    {
+      id: "Tfjso_8M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    {
+      id: "Tfjso_9M",
+      firstName: "John",
+      lastName: "Klaus",
+      occupation: "Carpenter"
+    },
+    
+  
+
+function targetStr({firstName,lastName,occupation,id},targetId){
+if(id === targetId ){
+return `Hello ${firstName} ${lastName}, have a great day at your job as a ${occupation}` 
+  }
+}
+
+let formattedStr = ''; 
+for (let ele of arr) {
+    if(ele === targetId){
+        formattedStr = 
+    }
+}
+
+
+
 
 
 
