@@ -246,3 +246,10 @@ console.log(myaTrueOrFalse(dinos[4],67));
 // ------------------------------------------------------
 // 3. Given an array of dinosaurs and a key return a new array where each dinosaur object is replaced with the corresponding value of a specified key within each object. If no key is given or a wrong key is given, return the dinosaurIds
 
+function newDinoArr(arr, key) { 
+return arr.map((dino) => dino[key] || dino.dinosaurId); 
+}
+
+
+console.log(newDinoArr(dinos,"name"))
+console.log(newDinoArr(dinos,))
