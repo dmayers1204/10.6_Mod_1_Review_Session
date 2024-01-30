@@ -110,7 +110,7 @@ const arrayOfObjects = [
       firstName: "John",
       lastName: "Klaus",
       occupation: "Carpenter"
-    },
+    }];
     
   
 
@@ -118,29 +118,6 @@ function targetStr({firstName,lastName,occupation,id},targetId){
 if(id === targetId ){
 return `Hello ${firstName} ${lastName}, have a great day at your job as a ${occupation}` 
   }
-}
+};
 
-let formattedStr = ''; 
-for (let ele of arr) {
-    if(ele === targetId){
-        formattedStr = 
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(targetStr('Tfjso_9M'));
